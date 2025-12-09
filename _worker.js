@@ -1,26 +1,60 @@
 
 let 快速订阅访问入口 = ['auto'];
-let addresses = [];
-let addressesapi = [];
+let addresses = [
+	    'cf.omycdn.ip-ddns.com:443#HK优选域名',
+		'v6o0o.neobirdfly.eu.org:446#US小黄云',
+		'happy.915988.xyz:443#HK小黄云',
+		'154.17.228.203:443#US反代',
+		'47.243.172.103:55055#HK反代',
+		'8.223.15.4:443#HK反代',
+		'79.76.110.144:2053#DE反代',
+		'134.185.101.56:443#SG反代',
+		'47.79.36.165:443#JP反代',
+];
+let addressesapi = [
+        'https://cf-workers-text2kv-y2t.pages.dev/cfhk.txt?token=mytest',
+		'https://cf-workers-text2kv-y2t.pages.dev/cfde.txt?token=mytest',
+		'https://cf-workers-text2kv-y2t.pages.dev/cfsg.txt?token=mytest',
+        'https://cf-workers-text2kv-y2t.pages.dev/usipv4-yd.txt?token=mytest',
+  		'https://cf-workers-text2kv-y2t.pages.dev/us-yidongv6.txt?token=mytest',
+  		'https://cf-workers-text2kv-y2t.pages.dev/hk-yidongv6.txt?token=mytest',
+		'https://cf-workers-text2kv-y2t.pages.dev/de-yidongv6.txt?token=mytest',
+		'https://cf-workers-text2kv-y2t.pages.dev/SG-v6.txt?token=mytest',
+	    'https://cf.090227.xyz/cmcc?ips=8',
+	    'https://cf.090227.xyz/CloudFlareYes',
+];
 
 let addressesnotls = [];
 let addressesnotlsapi = [];
 
-let addressescsv = [];
+let addressescsv = [
+  		'https://raw.githubusercontent.com/gavinhomework/AutoBuild-OpenWrt/refs/heads/master/CFST.csv',
+  		'https://raw.githubusercontent.com/gavinhomework/AutoBuild-OpenWrt/refs/heads/master/CFSG.csv',
+		'https://raw.githubusercontent.com/gavinhomework/AutoBuild-OpenWrt/refs/heads/master/CFHK.csv',
+		'https://raw.githubusercontent.com/gavinhomework/AutoBuild-OpenWrt/refs/heads/master/CFDE.csv',
+		'https://raw.githubusercontent.com/gavinhomework/AutoBuild-OpenWrt/refs/heads/master/Fandai.csv',
+];
 let DLS = 7;
 let remarkIndex = 1;//CSV备注所在列偏移量
 
 let subConverter = 'SUBAPI.cmliussss.net';
-let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2NtbGl1L0FDTDRTU1IvbWFpbi9DbGFzaC9jb25maWcvQUNMNFNTUl9PbmxpbmVfRnVsbF9NdWx0aU1vZGUuaW5p');
+let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2dhdmluaG9tZXdvcmsvcnVsZS9yZWZzL2hlYWRzL21hc3Rlci9jb25maWcvQ2xhc2gvbXlfcnVsZS5pbmk=');
 let subProtocol = 'https';
 let noTLS = 'false';
 let link;
 let 隧道版本作者 = atob('ZWQ=');
 let 获取代理IP;
 let proxyIPs = [
-	atob('cHJveHlpcC5meHhrLmRlZHluLmlv'),
+	atob('UHJveHlJUC5PcmFjbGUuY21saXVzc3NzLm5ldA=='),
 ];
-let 匹配PROXYIP = [];
+let 匹配PROXYIP = [
+	'ProxyIP.DigitalOcean.CMLiussss.net#HK',
+	'ProxyIP.Oracle.cmliussss.net#TW',
+	'ProxyIP.SG.CMLiussss.net#SG',
+	'ProxyIP.DE.CMLiussss.net#DE',
+	'ProxyIP.US.CMLiussss.net#US',
+	'ProxyIP.JP.CMLiussss.net#JP',
+];
 let socks5DataURL = '';
 let BotToken = '';
 let ChatID = '';
